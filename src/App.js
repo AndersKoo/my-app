@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+/* import Container from './components/Container'; */
+import InfoField from './components/InfoField';
+import QR from './components/QR';
+import styled from 'styled-components';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Outer>
+        <Container>
+          <QR />
+          <InfoField />
+        </Container>
+      </Outer>
+    </>
   );
 }
+
+const Outer = styled.div`
+  background-color: rgb(131, 186, 234);
+  padding: 3em 1em 3em 1em;
+`;
+const Container = styled.div`
+  background-color: hsl(0, 0%, 100%);
+  position: relative;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 288px;
+  padding: 1em 10px 2em 10px;
+  margin: 0 auto;
+`;
 
 export default App;
