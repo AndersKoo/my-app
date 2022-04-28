@@ -22,15 +22,14 @@ const InfoFieldStyle = styled.div`
   .title {
     font-size: 17px;
     text-align: center;
-
-    padding: 0 2em;
+    padding: 10px 2em;
   }
   .description {
     text-align: center;
     font-weight: 400;
     color: hsl(212, 12%, 59%);
     font-size: 14px;
-    padding: 0 2em 0 2em;
+    padding: 0 2em 0 1em;
   }
 `;
 
